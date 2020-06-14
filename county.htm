@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+#title {
+   text-align: center;     
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2 id="title">County That!</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for your county... " title="Type in a name">
+
+<ul id="myUL">
+  <h2>A:</h2>
+  <li><a href="#">Adams</a></li>
+  <li><a href="#">Asotin</a></li>
+    
+<br/><h2>B:</h2>
+  <li><a href="#">Benton</a></li>
+    
+<br/><h2>C:</h2>
+  <li><a href="#">Chelan</a></li>
+  <li><a href="#">Clallam</a></li>
+  <li><a href="#">Clark</a></li>
+  <li><a href="#">Columbia</a></li>
+  <li><a href="#">Cowlitz</a></li>
+    
+<br/><h2>D:</h2>
+  <li><a href="#">Douglas</a></li>
+    
+    
+<br/><h2>F:</h2>
+  <li><a>Ferry</a></li>
+  <li><a href="#">Franklin</a></li>
+    
+<br/><h2>G:</h2>
+  <li><a href="#">Garfield</a></li>
+  <li><a href="#">Grant</a></li>
+  <li><a href="#">Grays Harbor</a></li>
+    
+<br /><h2>I:</h2>
+  <li><a href="#">Island</a></li>
+
+    
+<br/><h2>J:</h2>
+  <li><a href="#">Jefferson</a></li>
+    
+<br/><h2>K:</h2>
+  <li><a href="#">King</a></li>
+  <li><a href="#">Kitsap</a></li>
+  <li><a href="#">Kittitas</a></li>
+  <li><a href="#">Klickitat</a></li>
+    
+<h2>L:</h2>
+  <li><a href="#">Lewis</a></li>
+  <li><a href="#">Lincoln</a></li>
+
+<br/><h2>M:</h2>
+  <li><a href="#">Mason</a></li>
+    
+<br/><h2>O:</h2>
+  <li><a href="#">Okanogan</a></li>
+    
+<br/><h2>P:</h2>
+  <li><a href="#">Pacific</a></li>
+  <li><a href="#">Pend Oreille</a></li>
+  <li><a href="#">Pierce</a></li>
+    
+<br/><h2>S:</h2>
+  <li><a href="#">San Juan</a></li>
+  <li><a href="#">Skagit</a></li>
+  <li><a href="#">Skamania</a></li>
+  <li><a href="#">Snohomish</a></li>
+  <li><a href="#">Spokane</a></li>
+  <li><a href="#">Stevens</a></li>
+    
+<br/><h2>T:</h2>
+  <li><a href="#">Thurston</a></li>
+ 
+<br/><h2>W:</h2>
+ <li><a href="#">Wahkiakum</a></li>
+  <li><a href="#">Walla Walla</a></li>
+  <li><a href="#">Whatcom</a></li>
+  <li><a href="#">Whitman</a></li>
+    
+<br/><h2>Y:</h2>
+  <li><a href="#">Yakinma</a></li>
+    
+</ul>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
