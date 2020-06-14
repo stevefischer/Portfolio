@@ -1,0 +1,43 @@
+
+
+
+<iframe src="https://stevefischer.github.io/GuitarsGalore/" />
+
+
+
+
+
+<hr>
+    <!--Certification Section--->
+    <section style="float: right">
+    <h2 style="font-size: 50px;margin-top: 0; padding-right: 400px"><u>Certifications:</u></h2>
+    
+    
+    </section>
+        <h2 style="font-size: 50px;margin-top: 0;padding-right: 100px;"><u>Skills:</u></h2>
+    
+        <section style="float: right">
+        <h2 style="font-size: 40px;margin-top: 0; padding-right: 1100px; ">Soft:</h2>
+        <p>&#9679; Fast Learner<br>&#9679; Hardworking
+        <br>&#9679; Self-Starter <br>&#9679; Independent Work Ethics
+        <br>&#9679; Works Well with Others <br>&#9679; Dependable
+             
+    </section>
+   
+
+    <section>
+        <h2 style="font-size: 40px;margin-top: 0; ">Software:</h2>
+        <p style="font-size: 20px;margin-top: 0;padding-right: 750px;"></p>
+
+    <h2 class="sub">Operating Systems</h2>
+    
+    <p class="pro"> &#9679; Microsoft Windows<br> &#9679; Apple Macintosh<br>&#9679; UNIX/LINUX</p>
+       
+    <h2 class="sub">Programming</h2>
+    <p class="pro"> &#9679; HTML<br> 
+    &#9679; CSS <br>&#9679; Java/JavaScript <br> &#9679; PHP <br> &#9679; C/C++ <br> &#9679; JSON <br> &#9679; jQuery<br> &#9679; SQL</p>
+        
+    <p class="pro"> &#9679; Network &amp; Security<br> &#9679; GitHub<br> &#9679; Agile/Scrum </p>
+    </section>
+    
+    style="font-size: 50px; margin-top:15px;margin-bottom: 0; float: right; padding-right: 800px;"

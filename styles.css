@@ -1,0 +1,202 @@
+/**
+
+    Project Name: Steve Fischer's Profolio Site
+    File Name: styles.css
+    Other Files: index.htm  
+    Date: 10/28/19
+
+**/  
+
+
+/* 2688x1242px at 458ppi */
+
+
+
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) 
+{
+   /** Imported Fonts **/ 
+@font-face {
+  font-family: Segoe UI;
+  src: url(SegoeUI.ttf);
+}
+    
+@font-face {
+  font-family: Impact;
+  src: url(impact.ttf);
+}
+
+    
+    img.me
+        {
+          float: left; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 250px; margin: 25px; padding: 0;
+   
+    }
+    
+    .logo{
+        padding: 5px;
+        width: 10%;
+    }
+    
+ul,footer {
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(50,71,90);
+}
+
+li {
+  text-align: center;
+  padding-left: 50px;
+  margin: 
+    
+}
+
+li a {
+  display: block;
+  color: white;  
+  text-align: center;
+  text-decoration: none;
+  font-family: Segoe UI;    
+}
+
+li a:hover {
+  background-color: rgb(97,134,167);
+}
+
+}
+/* Desktop Styles */
+body 
+    {
+        margin: auto; 
+        padding: 0; 
+       
+    }
+    
+/** Image Styles **/
+
+    img {   
+        display: inline-block;
+        align-items: center;
+        
+    }
+  
+
+    .social{
+        padding-left: 50px;
+        
+    }
+
+.me {float:right;  border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: -20px;}
+
+    
+/** Navigation Styles **/
+
+ul {
+  list-style-type: none;
+  margin: 0px 100px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(50,71,90);
+}
+
+li {
+    display: inline;
+    text-align: center;
+}
+
+li a {
+  float: left;
+  padding: 20px 20px;
+  color: white;  
+  text-align: center;
+  text-decoration: none;
+  font-family: Segoe UI;    
+}
+
+
+.nav{
+    float: right;
+    right: 0;
+    
+}
+
+/** Heading **/
+
+h1 { font-family: Impact; font-size: 50px; margin: 0px; color: rgb(97,134,167); padding-bottom: 0;}
+
+h2{ padding-bottom: 0; font-family: Impact; font-size: 25px; margin-top: 55px; color:  rgb(50,71,90); float: center;
+}
+
+
+
+p{
+    font-family: Segoe UI;
+    color:  rgb(97,134,167);
+    text-justify:inherit;
+}
+
+.para {
+    text-align: center;
+}
+
+.sub {font-size: 35px; margin-top: 0; padding-left: 125px, color:rgb(50,71,90);}
+.pro {margin-top: 0; padding-left: 110px;}
+
+.button1,.button2,button{
+    border: none;
+    background-color: rgb(50,71,90); ;
+    padding: 15px 32px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.logo{
+    display: block;
+    width: 30%;
+    margin-left: 50px;
+}
+
+a:active{
+    color: rgb(97,134,167);
+}
+
+
+section {
+    margin: 0 50px;
+}
+.about{
+    text-align: center;
+}
+
+header{
+    background-color:  rgb(50,71,90);
+    padding-bottom: 20px;
+}
+
+.contact{border-style: solid; background-color:rgb(222,235,250); text-align: center;}
+
+.title {text-align: center;padding-bottom: 20px;}
+
+footer{  
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(50,71,90);
+} 
+
+   /** Imported Fonts **/ 
+@font-face {
+  font-family: Segoe UI;
+  src: url(SegoeUI.ttf);
+}
+    
+@font-face {
+  font-family: Impact;
+  src: url(impact.ttf);
+}
