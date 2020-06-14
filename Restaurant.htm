@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--
+
+CID Name Assignment (change the title tag above too!)
+
+What objectives are you demonstrating?
+
+Create a fading menu with jQuery for 15pts as CID-U06B-XXXX.htm as U06B
+
+The top of the menu will have appetizers, entrees, desserts and beverages
+
+When the user click on the heading, the menu for that portion will fade down. 
+
+The user will also have an opportunity to remove the submenu selected. 
+
+Pick a theme and be creative! Use CSS to create a pleasing presentation.
+
+See the rubric link below for grading criteria. 
+-->
+
+<style>
+    
+    body { margin: 5%; font-size: 1.5em; }
+    
+    h1 { text-align: center; color: rgb(255,0,0); }
+    
+    h2 { color: rgb(80,220, 100) }
+
+    img {float: right;}
+    
+	
+	
+
+
+</style>
+
+<script>
+    
+    $(document).ready(function()
+    {
+        // Show appetizers
+        $("#appHead").click(function()
+        {
+          $("#app").fadeIn(2000);
+          $("#bev").fadeOut(2000);
+          $("#ent").fadeOut(2000);
+          $("#des").fadeOut(2000);
+        });
+       
+        // Show entrees / Hide appetizers
+        $("#entHead").click(function()
+        {
+            $("#app").fadeOut(2000);
+            $("#ent").fadeIn(2000);
+            $("#des").fadeOut(2000);
+            $("#bev").fadeOut(2000);
+            
+        });
+        
+        // Show desserts / Hide entrees / Hide appetizers
+        $("#desHead").click(function()
+        {
+            $("#app").fadeOut(2000);
+            $("#ent").fadeOut(2000);
+            $("#des").fadeIn(2000);
+            $("#bev").fadeOut(2000);
+        });
+        
+        // Show desserts / Hide entrees / Hide appetizers
+        $("#bevHead").click(function()
+        {
+            $("#app").fadeOut(2000);
+            $("#ent").fadeOut(2000);
+            $("#des").fadeOut(2000);
+            $("#bev").fadeIn(2000);
+            
+        });
+        
+        
+                   
+    });
+        
+</script>
+
+</head>
+<body>
+    
+<h1>~ MENU ~</h1>
+<h3>Welcome to the best Italian restaurant in town!<br /> Choose from the appetizers, entrees, desserts, and beverages below for the perfect meal to satisfy your tastebuds. I hope you come visit us again!</h3>
+
+<aside>
+    <img src="chef.png" alt="chef" />
+</aside> 
+<section>
+	<!-- Appetizers -->
+	<h2 id="appHead">Appetizers:</h2>
+	<ul id="app" style="display: none;">
+		<li>Cheese Sticks</li>
+		<li>Salad (House/Ceaser)</li>
+		<li>Bread Twists</li>
+	</ul>
+		
+	<!-- Entrees -->
+	<h2 id="entHead">Entrees:</h2>
+	<ul id="ent" style="display: none;">
+		<li>Pizza</li>
+		<li>Fettuccine Alfredo</li>
+		<li>Calzone</li>
+	</ul>
+		
+	<!--- Desserts -->
+	<h2 id="desHead">Desserts:</h2>
+	<ul id="des" style="display: none;">
+		<li>Cheesecake</li>
+		<li>Chocolate Pudding</li>
+		<li>Multen Lava Cake</li>
+	</ul>
+	  
+	<!-- Beverages -->
+	<h2 id="bevHead">Beverages:</h2>
+	<ul id="bev" style="display: none;">
+		<li>Coca Cola</li>
+		<li>Diet Coke</li>
+		<li>Dr Pepper</li>
+	</ul>
+</section>
+
+</body>
+</html>
