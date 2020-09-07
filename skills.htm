@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Steve Fischer's Portfolio | Skills</title>
+<title>Skills | Steve Fischer's Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="styles.css">
@@ -19,20 +19,27 @@
 
 <body>
 <header>
-    <br>
-   
-    <ul class="nav">
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="about.htm">About Me</a></li>
-        <li><a href="projects.htm">Projects</a></li>
-        <li><a href="contact.htm">Contact</a></li>
-    </ul>
-     <img src="Pictures/logo.jpg" class="logo" href="index.htm"/>
+<img src="Pictures/logo.jpg" class="logo" href="index.htm" style="padding-left: 35%; padding-top: 25px" /><br>
+<div class="topnav" id="myTopnav">
+  <a href="index.htm">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="about.htm">About Steve</a>
+      <a href="skills.htm">Skills</a>
+      <a href="certifications.htm">Certifications</a>
+    </div>
+  </div>
+<a href="projects.htm">Projects</a>
+  <a href="contact.htm">Contact</a>
+</div> 
 </header>
 
     
     
-      <section>
+      <section style="text-align: center;">
     <h1 style="font-size: 50px;padding-top: 100px;">Skills:</h1>
         
    <div class="row">
@@ -53,9 +60,9 @@
         Structured Query Language (SQL)<br>
         Agile/Scrum<br>
         GitHub<br>
-             Swift</p>
+        Swift</p>
   </div>
-  <div class="column">
+  <div class="column" style="padding-bottom: 100px;">
     <h2 style="font-size: 30px;">Soft</h2>
     <p> Fast Learner<br>
         Hardworking<br>

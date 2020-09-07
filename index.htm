@@ -19,16 +19,24 @@
 
 <body>
 <header>
-    <br>
-   
-    <ul class="nav">
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="about.htm">About Me</a></li>
-        <li><a href="projects.htm">Projects</a></li>
-        <li><a href="contact.htm">Contact</a></li>
-    </ul>
-     <img src="Pictures/logo.jpg" class="logo" href="index.htm"/>
+<img src="Pictures/logo.jpg" class="logo" href="index.htm" style="padding-left: 35%; padding-top: 25px" /><br>
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="about.htm">About Steve</a>
+      <a href="skills.htm">Skills</a>
+      <a href="certifications.htm">Certifications</a>
+    </div>
+  </div>
+<a href="projects.htm">Projects</a>
+  <a href="contact.htm">Contact</a>
+</div> 
 </header>
+    
  <section>
     <img src="Pictures/IMG_4176.JPG"  class="me" />
 </section>
@@ -38,7 +46,7 @@
 <h1 style="margin-left:25px;">STEVE FISCHER</h1>
  
 <p>“From the time I wrote my first line of code in HTML & CSS and was introduced to the world of programming, I knew I wanted to be a web developer. Over the years, I have expanded my knowledge on other languages including markup, object-oriented, and scripting.”</p>
-<button onclick="window.location.href='about.htm'">Learn More</button>
+<button onclick="window.location.href='about.htm'" style="margin-left: 30%">Learn More</button>
 
 </section> 
     
