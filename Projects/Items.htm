@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guitar Equipment (JSON)</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--
+
+E14  (change the title tag above too!)
+
+What objectives are you demonstrating?
+
+    -Use JSON array
+    -for/in loop
+    -Use JSON keys
+    -JSON complex objects
+    -Validating JSON object (external)
+    -Use of concatenation
+    -Use of .innerHTML 
+
+-- Create an invoice of 5+ items with total for 15pts as CID-U07A-XXXX.htm as U07A
+-- Create an invoice based on a JSON payload of a minimum 5 items. 
+-- Display the description and the cost of each item and calculate the total of all items in a tabular display with appropriate headings. 
+-- Use CSS to create a pleasing presentation.
+-- See the rubric link below for grading criteria. 
+
+-->
+
+</head>
+<style>
+
+body { margin: 5%; background-color: black;}
+    
+h1 { text-align: center; color: red;}
+    
+h2{ color: white;}
+    
+    li { color: lightgrey;}
+    
+    aside { right: 10px; }
+
+</style>
+
+<body>
+
+<div id="output">X</div>
+
+</body>
+
+<script>
+    var data = {
+        "hdg1" : "Guitar Equipment",
+        "hdg2" : "Guitars:",
+        "sub" : "Browse below to see what guitar equipment we sell and how much each item is worth... ",
+        "hdg3" : "Amps:",
+        "hdg4" : "Miscellaneous:",
+        
+        
+    "guitar" : [
+        { "gui" : "Fender Telecaster", "prc" : "$499.99" }, 
+        { "gui" : "Ibanez AEG19II Sunburst", "prc" : "$399.99" }, 
+        { "gui" : "Fender Telecaster", "prc" : "$299.99" } 
+        ],
+        
+    "amps" : [
+        { "amp" : "Fender Twin Reverb", "prc" : "$399.99" }, 
+        { "amp" : "Fishman Loudbox", "prc" : "$299.99" },
+        { "amp" : "Vox Custom Series", "prc" : "$499.99" }
+        
+        ]
+    
+    }
+    var output = "";
+    
+    // Buid Headings
+    output += "<h1>" + data.hdg1 + "</h1>";
+    output += "<h2>" + data.sub + "</h2>";
+    
+    
+    
+    
+    // Build guitar output
+    output += "<h2>" + data.hdg2 + "</h2>";
+    output += "<ul>";
+    
+    for(var i in data.guitar)
+    {
+     output += "<li>" + data.guitar[i].gui + " (";
+     output += data.guitar[i].prc + ")</li>";
+    }
+    output += "</ul>";
+    
+    // Build amp output
+    output += "<h2>" + data.hdg3 + "</h2>";
+    output += "<ul>";
+    for(var i in data.amps) {
+    output += "<li>" + data.amps[i].amp + " (";
+    output += data.amps[i].prc + ")</li>";
+    }
+    
+    output += "</ul>";
+    
+     // Build misc. output
+    output += "<h2>" + data.hdg4 + "</h2>";
+    output += "<ul>";
+    for(var i in data.amps) {
+    output += "<li>" + data.amps[i].amp + " (";
+    output += data.amps[i].prc + ")</li>";
+    }
+    output += "</ul>";
+    document.getElementById("output").innerHTML = output;
+    
+</script>
+ <aside>
+    <img src="guitar.png" />
+</aside>
+    
+</html>

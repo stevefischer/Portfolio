@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CREATE YOUR PIZZA ORDER!</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--
+
+E14 Steve Pizza 
+
+What objectives are you demonstrating?
+
+- Got objects out of arrays 
+- Used onclick to access function
+- Used addition, multiplication, and fixing decimals
+- Used arrays
+- Used subscripts to reference the array 
+- Used if statements if checked was true
+-->
+
+<style>
+
+h1,#x{ text-align: center; }
+
+body { margin: 5%; background-color: rgb(254, 255, 226); }
+
+/* Align form */
+.label {
+        display: inline-box; width: 5em; float: left;
+        text-align: right; padding-right: .5em;  
+}
+
+/* Color buttons */
+#prc { background: #ccffcc; }
+#rst { background: #ffcccc; }
+
+/* Resize buttons */
+input[type=text]   { height: 1.5em; }
+input[type=radio]  { height: 1.5em; }
+input[type=button] { height: 1.5em; }
+input[type=reset]  { height: 1.5em; }
+    
+img { float: right;        
+    }
+    
+form
+{
+   border-style: solid;
+   border-color: rgb(255,0,0);
+    background-color: rgb(252, 234, 234);
+   color: 
+}
+
+</style>
+
+<script>
+
+// Proc Pizza data from form
+function pizza(mydata) 
+{
+        
+        // Extract form data
+        var cost = 0;
+		
+       if(mydata.size[0].checked) { cost = 10; }
+       if(mydata.size[1].checked) { cost = 15; }
+       if(mydata.size[2].checked) { cost = 20; }
+    
+       if(mydata.topp[0].checked) { cost += 2; }
+       if(mydata.topp[1].checked) { cost += 2; }
+       if(mydata.topp[2].checked) { cost += 2; }
+       if(mydata.topp[3].checked) { cost += 2; }
+    
+			
+		
+        // Send output to page by id
+       document.getElementById("cost").innerHTML = "Total Cost: $" + cost.toFixed(2);
+}	
+		
+
+
+</script>
+
+</head>
+<body>
+    
+<img src="pizza.png" />
+
+<h1>CREATE YOUR PIZZA ORDER!</h1>
+
+<h2>Welcome! Start by entering in your first and last name.
+    <br /> <br /> 
+    Then, you can customize a pizza order by choosing one of the three sizes and four toppings.</h2>
+    <br />
+    
+    <h2 id="x">Pizza Sizes: Small - $10, Medium - $15, Large - $20</h2>
+    
+    <h2 id="x">Pizza Toppings: Pepperoni - $2, Cheese - $2, Mushroom - $2, Olive - $2 </h2><br />
+    
+<form id="x">
+
+<h2 id="x">Place Your Order:</h2>
+
+    <!-- Name -->
+    Name:  <input type="text" name="myname" id="x"/>
+    <br /><br />
+
+    <!-- Select Size -->
+    Select Size:  
+    <input type="radio" name="size" value="small" /> Small
+    <input type="radio" name="size" value="medium" /> Medium
+    <input type="radio" name="size" value="large" /> Large  
+    <br /><br />
+
+    <!-- Select Toppings -->
+    Select Toppings:  
+    <input type="checkbox" name="topp" value="pepperoni" /> Pepperoni
+    <input type="checkbox" name="topp" value="cheese" /> Cheese
+    <input type="checkbox" name="topp" value="mushroom" /> Mushrooms   
+    <input type="checkbox" name="topp" value="olive" /> Olives
+    <br /><br />
+
+    <!-- Process / Reset form -->
+    <input id="prc" type="button" value="Place Order" onclick="pizza(this.form)" />
+    <input id="rst" type="reset" />
+    
+    <!-- Update message from pizza() function -->
+    
+    <h2 id="cost"></h2>
+</form>
+
+
+
+
+</body>
+</html>

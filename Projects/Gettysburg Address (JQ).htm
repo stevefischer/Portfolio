@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Show/Hide Gettysburg Address</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--
+
+CID Name Assignment (change the title tag above too!)
+
+What objectives are you demonstrating?'
+
+Create hide/show Gettysburg Address with jQuery for 15pts as CID-U06A-XXXX.htm as U06A
+
+-- Display the first 9 words of each paragraph of the Gettysburg Address with a jQuery method to view the remainder of the paragraph. 
+
+-- Also give an option to hide the paragraph as well.
+
+-- Each paragraph should have a unique show/hide feature.
+
+-- The text of the speech is 1/4 page down from the top from the link below.
+
+See sample in the Links section as an example of output. Use CSS to create a pleasing presentation. See the rubric link below for grading criteria. 
+
+-->
+
+<style>
+
+	body { margin: 8%; font-size: 2em; background-color: rgb(234,225,162); }
+	
+	h1 { text-align: center;
+         font-family: 'Old English Text MT'; 
+         font-size: 3em; }
+	
+	p { font-size: 1.75em; 
+        font-family: 'Brush Script MT'; }
+		
+	a { text-align: center;
+		font-size: 1em; 
+		font-family: 'Old English Text MT'; }
+	
+
+</style>
+
+<script>
+
+	 $(document).ready(function()
+    {
+        
+		   $("#P1").show();
+		   $("#P1A").hide();
+		   
+		   $("#P2").show();
+		   $("#P2A").hide();
+		  
+		   $("#P3").show();
+		   $("#P3A").hide();
+
+	
+	// Show Each Paragraphs
+	
+		$("#showP1").click(function()
+        {
+           $("#P1").hide();
+		   $("#P1A").show();
+		   
+		   $("#P2").show();
+		   $("#P2A").hide();
+		  
+		   $("#P3").show();
+		   $("#P3A").hide();
+		   
+        });
+		
+		$("#showP2").click(function()
+        {
+           $("#P1").show();
+		   $("#P1A").hide();
+		   
+		   $("#P2").hide();
+		   $("#P2A").show();
+		  
+		   $("#P3").show();
+		   $("#P3A").hide();
+        });
+		
+		$("#showP3").click(function()
+        {
+           $("#P1").show();
+		   $("#P1A").hide();
+		   
+		   $("#P2").show();
+		   $("#P2A").hide();
+		  
+		   $("#P3").hide();
+		   $("#P3A").show();
+        });
+		
+		// Hide Each Paragraph
+		
+		$("#hideP1").click(function()
+        {
+		   $("#P1").show();
+		   $("#P1A").hide();
+		   
+		   $("#P2").hide();
+		   $("#P2A").show();
+		  
+		   $("#P3").hide();
+		   $("#P3A").show();
+		});
+
+		$("#hideP2").click(function()
+        {
+		   $("#P1").hide();
+		   $("#P1A").show();
+		   
+		   $("#P2").show();
+		   $("#P2A").hide();
+		  
+		   $("#P3").hide();
+		   $("#P3A").show();
+		});
+
+		$("#hideP3").click(function()
+        {
+		   $("#P1").hide();
+		   $("#P1A").show();
+		   
+		   $("#P2").hide();
+		   $("#P2A").show();
+		  
+		   $("#P3").show();
+		   $("#P3A").hide();
+		});	
+		
+		$("#showAll").click(function()
+        {
+		   $("#P1").hide();
+		   $("#P1A").show();
+		   
+		   $("#P2").hide();
+		   $("#P2A").show();
+		  
+		   $("#P3").hide();
+		   $("#P3A").show();
+		});
+		
+		$("#hideAll").click(function()
+        {
+		   $("#P1").show();
+		   $("#P1A").hide();
+		   
+		   $("#P2").show();
+		   $("#P2A").hide();
+		  
+		   $("#P3").show();
+		   $("#P3A").hide();
+		});
+		
+	});
+</script>
+
+</head>
+<body onload="load()">
+
+<a id="showP1" href="#" style="text-decoration-line: none;">|Show Paragraph 1</a>
+<a id="hideP1" href="#" style="text-decoration-line: none;">Hide Paragraph 1 | </a>
+<a id="showAll" href="#" style="text-decoration-line: none;">Show All</a>
+
+<br><br>
+<a id="showP2" href="#" style="text-decoration-line: none;">|Show Paragraph 2</a>
+<a id="hideP2" href="#" style="text-decoration-line: none;">Hide Paragraph 2|</a>
+<a id="hideAll" href="#" style="text-decoration-line: none;">Hide All</a>
+<br><br>
+<a id="showP3" href="#" style="text-decoration-line: none;">|Show Paragraph 3</a>
+<a id="hideP3" href="#" style="text-decoration-line: none;">Hide Paragraph 3|</a>
+<br />
+<h1>Gettysburg Address</h1>
+
+<!-- Paragraph 1 -->
+
+<p id="P1">Four score and seven years ago our fathers brought...</p>
+
+<p id="P1A">Four score and seven years ago our fathers brought forth on this continent a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.</p>
+
+<!-- Paragraph 2 -->
+
+<p id="P2">Now we are engaged in a great civil war, ...</p>
+
+<p id="P2A" style="display: none">Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
+
+<!-- Paragraph 3 -->
+
+<p id="P3">But, in a larger sense, we can not dedicate, ...</p>
+
+<p id="P3A">But, in a larger sense, we can not dedicate, we can not consecrate, we can not hallow this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth. </p>
+
+</body>
+</html>
