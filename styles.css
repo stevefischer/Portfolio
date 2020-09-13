@@ -34,7 +34,7 @@ and (orientation : portrait)
     }
     
     .logo{
-        padding: 5px;
+        padding: 20px;
         width: 10%;
     }
     
@@ -90,9 +90,6 @@ body
 
 .me {float:right;  border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: -20px;}
 
-    
-
-
 /* Dropdown Styles */
 
 /* Add a black background color to the top navigation */
@@ -100,9 +97,6 @@ body
   background-color: rgb(50,71,90);
   overflow: hidden;
 
-}
-#home{
-    margin-left: 25px;
 }
 
 /* Style the links inside the navigation bar */
@@ -117,12 +111,6 @@ body
   margin-right: 13px;
   text-decoration: none;
   font-size: 30px;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color: rgb(97,134,167);
-  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -258,7 +246,8 @@ p{
 .logo{
     display: block;
     width: 30%;
-    margin-left: 50px;
+    margin-left: 35%;
+    
 }
 
 a:active{
@@ -292,12 +281,12 @@ footer{
    /** Imported Fonts **/ 
 @font-face {
   font-family: Segoe UI;
-  src: url(SegoeUI.ttf);
+  src: url(Fonts/SegoeUI.ttf);
 }
     
 @font-face {
   font-family: Impact;
-  src: url(impact.ttf);
+  src: url(Fonts/impact.ttf);
 }
 
 
