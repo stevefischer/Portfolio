@@ -8,37 +8,17 @@
 **/  
 
 
-/* 2688x1242px at 458ppi */
-
-
-
-@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) 
-{
-   /** Imported Fonts **/ 
-@font-face {
-  font-family: Segoe UI;
-  src: url(SegoeUI.ttf);
-}
-    
-@font-face {
-  font-family: Impact;
-  src: url(impact.ttf);
-}
-
-    
-    img.me
-        {
-          float: left; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 250px; margin: 25px; padding: 0;
-   
+/* Desktop Styles */
+body 
+    {
+        margin: auto; 
+        padding: 0; 
+       
     }
-    
-    .logo{
-        padding: 20px;
-        width: 10%;
-    }
-    
-ul,footer {
+	
+/* Nav Styles */
+
+footer {
   text-align: center;
   list-style-type: none;
   margin: auto;
@@ -47,162 +27,55 @@ ul,footer {
   background-color: rgb(50,71,90);
 }
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 li {
-  text-align: center;
-  padding-left: 50px;
-  margin: 
+ display: inline-block;
+ margin: 0 10%;
     
 }
 
 li a {
   display: block;
   color: white;  
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   font-family: Segoe UI;    
+  font-size: 23px;
 }
 
 li a:hover {
-  background-color: rgb(97,134,167);
+  text-decoration: underline;
+  
+ 
 }
 
-}
-/* Desktop Styles */
-body 
-    {
-        margin: auto; 
-        padding: 0; 
-       
-    }
     
 /** Image Styles **/
 
-    img {   
-        display: inline-block;
+    img { display: inline-block;
         align-items: center;
         
     }
-  
-    .social{
-        padding-left: 50px;
+ 
+.social {
+        margin-left: 22% ;
         
     }
 
 .me {float:right;  border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-top: 50px; margin-bottom: 50px;margin-left: 20px; margin-right: -20px;}
 
-/* Dropdown Styles */
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(50,71,90);
-  overflow: hidden;
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  font-family: Segoe UI;
-  padding: 10px 142px;
-  margin-left: 13px;
-  margin-right: 13px;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 30px;
-  text-align: center;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 142px;
-  background-color: inherit;
-  font-family:Segoe UI;  
-  
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 142px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 142px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  color: white;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
 
 /** Heading **/
 
-h1 { font-family: Impact; font-size: 50px; margin: 0px; color: rgb(97,134,167); padding-bottom: 0;}
+h1 { font-family: Impact; font-size: 50px; color: rgb(97,134,167); }
 
-h2{ font-size: 30px; font-family: Impact; margin-top:30px; color: rgb(50,71,90);
-}
+h2{ font-size: 30px; font-family: Impact; color: rgb(50,71,90); text-align: left;}
+
 
 h3 {
     font-family: Impact;
@@ -214,8 +87,8 @@ h3 {
 p{
     font-family: Segoe UI;
     color:  rgb(50,71,90);
-    text-justify:inherit;
     font-size: 20px;
+   
 }
 
 .para {
@@ -230,31 +103,31 @@ p{
 .pro {margin-top: 0; padding-left: 110px;}
 
 button, .button1,.button2{
-    border: none;
-    background-color: rgb(50,71,90); 
-    padding: 15px 32px;
+    border-color: rgb(50,71,90);
+    background-color: white; 
+    padding: 10px;
+    margin-left: 50%;margin-left: 50%;
     display: inline-block;
-    color: white;
+    color: rgb(97,134,167);
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    border-radius: 15px;
-    font-family: Segoe UI;
+    font-size: 30px;
+    border-radius: 1px;
+    font-family: Impact;
 }
 
-
+button:hover, .button1:hover,.button2:hover{
+	background-color: rgb(50,71,90);
+}
 .logo{
     display: block;
-    width: 30%;
-    margin-left: 35%;
+    width: 50%;
+    margin-left: 23%;
     padding-top: 20px;
     
     
 }
 
-a:active{
-    color: rgb(97,134,167);
-}
 
 
 section {
@@ -269,7 +142,7 @@ header{
     padding-bottom: 20px;
 }
 
-.contact{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center;}
+.contact{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center; padding: 25px 0;}
 
 .title {text-align: center;padding-bottom: 20px;}
 
@@ -281,6 +154,12 @@ footer{
   background-color: rgb(50,71,90);
 } 
 
+iframe{
+    max-height: 50%;
+    width: 50%;
+    padding: 2px;
+    margin-left: 25%;
+}
    /** Imported Fonts **/ 
 @font-face {
   font-family: Segoe UI;
@@ -291,6 +170,5 @@ footer{
   font-family: Impact;
   src: url(Fonts/impact.ttf);
 }
-
 
 
