@@ -47,11 +47,35 @@ li a {
   font-size: 23px;
 }
 
-li a:hover {
+li a:hover, a:hover {
   text-decoration: underline;
-  
- 
+
 }
+
+ .about_nav{
+  text-align: center;
+  color:grey;
+  text-decoration: none;
+  margin: 0 8%;
+  font-family: Segoe UI;
+}
+
+.about_nav:visited{
+	color:grey;
+}
+
+ .proj_nav{
+  text-align: center;
+  color:grey;
+  text-decoration: none;
+  margin: 0 10%;
+  font-family: Segoe UI;
+}
+
+.proj_nav:visited{
+	color:grey;
+}
+
 
     
 /** Image Styles **/
@@ -72,15 +96,15 @@ li a:hover {
     }
     
 
-.me {float:none; margin-left: 34%; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; }
+.me {float:right; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-left:50px; margin-right:5%; margin-top: 8%;}
 
 
 
 /** Heading **/
 
-h1 { font-family: Impact; font-size: 50px; color: rgb(97,134,167); }
+h1 { font-family: Impact; font-size: 50px; color: rgb(50,71,90); }
 
-h2{ font-size: 30px; font-family: Impact; color: rgb(50,71,90); text-align: left;}
+h2{ font-size: 30px; font-family: Impact; color: rgb(97,134,167); text-align: left; margin:0 20%;}
 
 
 h3 {
@@ -94,12 +118,14 @@ p{
     font-family: Segoe UI;
     color:  rgb(50,71,90);
     font-size: 20px;
+	padding: 0 1%;
    
 }
 
 .para {
     text-align: justify;
     font-size: 20px;
+
 }
 
 .sub {
@@ -150,7 +176,9 @@ header{
 
 .contact{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center; padding: 25px 0;}
 
-.title {text-align: center;padding-top: 50px; padding-bottom: 20px;}
+.quote{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center; padding: 25px 0; font-size: 40px;}
+
+.title {text-align: center;padding-top: 50px;}
 
 
 footer{  
