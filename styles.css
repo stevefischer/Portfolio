@@ -56,7 +56,7 @@ li a:hover, a:hover {
   text-align: center;
   color:grey;
   text-decoration: none;
-  margin: 0 9%;
+  margin: 0 7%;
   font-family: Segoe UI;
 }
 
@@ -96,7 +96,7 @@ li a:hover, a:hover {
     }
     
 
-.me {float:right; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-left:50px; margin-right:5%; margin-top: 8%;}
+.me {float:right; border-color: rgb(97,134,167); border-style: double; border-width: 15px; width: 400px; margin-left:50px; margin-right:5%; margin-top: 13%;}
 
 
 
