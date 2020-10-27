@@ -20,6 +20,39 @@ text-align: center;
 }
 </style>
 
+<script>
+$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+
+
+</script>
 <body>
 <header>
 <img src="Pictures/logo.jpg" class="logo" href="index.htm" /><br>
@@ -34,6 +67,8 @@ text-align: center;
 <section>
 <h1 class="title">Welcome, I'm Steve Fischer</h1>
     <h1 style="color: rgb(97,134,167);text-align: center;"> A Front-End &amp; UX/UI Web Developer</h1><hr><br><br>
+</section>
+<section>
 <h2 style="background-color:  rgb(222,235,250); text-align: center; font-family: Segoe UI;" class="quote">"From the time I wrote my first line of code, in HTML &amp; CSS and was introduced to the world of programming, I knew I wanted to be a web developer.<br>
 <br>Over the years, I have expanded my knowledge on other languages including, markup,<br> object-oriented, and scripting."</h2>
 <br><br>
@@ -74,8 +109,8 @@ text-align: center;
 <button onclick="window.location.href='projects.htm'" style="margin-left: 44%; margin-bottom: 5%;">View More</button>
     
     
-    </section>
-    <section style="padding-bottom: 5%">
+</section>
+<section style="padding-bottom: 5%">
  <h1 class="sub" style="font-size: 37px; color: white">Contact</h1>
     
 <h3 style="text-align: center;">Keep Up With Me &amp; My Endeavors</h3>
