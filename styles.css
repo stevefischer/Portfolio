@@ -237,6 +237,7 @@ iframe{
 .html, .css, .github {width: 100%; background-color: rgb(97,134,167);}
 .php, .js {width: 90%; background-color: rgb(97,134,167);}
 .c, .sql {width: 80%; background-color: rgb(97,134,167);}
-.json, .swift, .python {width: 65%; background-color: rgb(97,134,167);}
+ .swift, .python {width: 65%; background-color: rgb(97,134,167);}
+.json {width: 75%; background-color: rgb(97,134,167);}
     
 
