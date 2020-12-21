@@ -56,7 +56,7 @@ li a:hover, a:hover {
   text-align: center;
   color:grey;
   text-decoration: none;
-  margin: 0 7%;
+  margin: 10%;
   font-family: Segoe UI;
 }
 
@@ -68,7 +68,7 @@ li a:hover, a:hover {
   text-align: center;
   color:grey;
   text-decoration: none;
-  margin: 5% 9.9%;
+  margin: 5% 7.4%;
   font-family: Segoe UI;
 }
 
@@ -138,7 +138,6 @@ button, .button1,.button2{
     border-color: rgb(50,71,90);
     background-color: white; 
     padding: 10px;
-   
     display: inline-block;
     color: rgb(97,134,167);
     text-align: center;
@@ -176,7 +175,7 @@ header{
 
 .contact{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center; padding: 25px 0;}
 
-.quote{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center;}
+.quote{border-style: solid; border-color: rgb(50,71,90); background-color:rgb(222,235,250); text-align: center;padding:50px;}
 
 .title {text-align: center;padding-top: 50px;}
 
@@ -205,4 +204,39 @@ iframe{
   src: url(Fonts/impact.ttf);
 }
 
+/* Skills/Proficency */
+
+* {box-sizing: border-box}
+    
+ 
+    
+  h3{ font-size: 30px; font-family: Impact; color: rgb(50,71,90); text-align: left; margin:0%;}
+    
+    p{
+    font-family: Segoe UI;
+   
+    color:  
+    font-size: 20px;
+	padding: 0 1%;
+    }
+
+.container {
+  width: 100%;
+
+  background-color: #ddd;
+  
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html, .css, .github {width: 100%; background-color: rgb(97,134,167);}
+.php, .js {width: 90%; background-color: rgb(97,134,167);}
+.c, .sql {width: 80%; background-color: rgb(97,134,167);}
+.json, .swift, .python {width: 65%; background-color: rgb(97,134,167);}
+    
 

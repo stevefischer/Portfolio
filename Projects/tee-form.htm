@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>U08-tee-from</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+
+body { margin: 8%; font-size: 150%; font-family: Arial; }
+
+section { margin-right: 20px; float: left; }
+
+#sample { width: 100px; height: 100px; border: 1px solid #000000; }
+
+</style>
+
+<script>
+
+function showColor(clr) {
+	
+	// Default sample color
+	var sclr = "#ffffff";
+	
+	// Set color
+	if(clr == "red")   { sclr = "#ffaaaa"; }
+	if(clr == "green") { sclr = "#aaffaa"; }
+	if(clr == "blue")  { sclr = "#aaaaff"; }
+	
+	// Change the color of the box
+	document.getElementById("sample").style.background = sclr;
+}
+
+</script>
+
+</head>
+<body>
+<h1>T-Shirts R Us!</h1>
+
+<form method="post" action="U08-tee-proc.php">
+
+<section id="color">
+<b>Colors:</b>
+<br />
+<input type="radio" name="color" value="white" onClick="showColor('white')" checked /> White
+<br />
+<input type="radio" name="color" value="red"   onClick="showColor('red')"   /> Red
+<br />
+<input type="radio" name="color" value="green" onClick="showColor('green')" /> Green
+<br />
+<input type="radio" name="color" value="blue"  onClick="showColor('blue')"  /> Blue
+</section>
+
+<section id="sample">
+</section>
+
+<section id="size">
+<b>Sizes:</b>
+<br />
+<input type="radio" name="size" value="large"  /> Large - $12
+<br />
+<input type="radio" name="size" value="medium" checked /> Medium - $10
+<br />
+<input type="radio" name="size" value="small"   /> Small - $10
+<br />
+<input type="radio" name="size" value="x-small" /> X-Small - $8
+</section>
+
+<div style="clear: both;"></div>
+<br />
+<b>Quant:</b> 
+<input type="text" name="quant" size="2" />
+<input type="submit" value="Buy Now!" style="font-size: .8em; background: #aaffaa;" />
+
+</form>
+
+</body>
+</html>

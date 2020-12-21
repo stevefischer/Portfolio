@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E11 U05-find-Waldo</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--
+
+E11 Mark U05-find-Waldo
+
+What objectives are you demonstrating?
+-Using mouseover and mouseout
+-Using onload
+-getElementsByTagName
+-JavaScrip styles
+-Used arrays
+-Used "this"
+
+-->
+
+<style>
+
+body { margin: 50px; }
+
+p { font-size: 2em; }
+
+/* Placement of Waldos */
+#w1 { margin-left: 500px; margin-top: 50px; }
+#w2 { margin-left: 100px; margin-top: 250px; }
+#w3 { margin-left: 800px; margin-top: 50px; }
+
+</style>
+
+<script>
+
+// Hide all Walcods
+function hideAll() {
+
+	var x = document.getElementsByTagName("p");
+	for(var i = 0; i < x.length; i++) {
+		x[i].style.color = "#ffffff";
+	}
+}
+
+// Show all Walods
+function showAll() {
+
+	var x = document.getElementsByTagName("p");
+	for(var i = 0; i < x.length; i++) {
+		x[i].style.color = "#000000";
+	}
+}
+
+// Show a single Waldo when mouse over
+function show(id,clr) {
+
+	document.getElementById(id).style.color = clr;
+
+}
+
+// Hide a Waldo when mouse leaves
+function hide(id) {
+
+	document.getElementById(id).style.color = "#ffffff";
+
+}
+
+</script>
+
+</head>
+<body onload="hideAll()">
+
+<h1 onclick="showAll()">Where's Waldo</h1>
+
+<p id="w1"
+onmouseover="show(this.id,'#cc0000')";
+onmouseout="hide(this.id)";
+>Waldo!</p>
+
+<p id="w2"
+onmouseover="show(this.id,'#00cc00')";
+onmouseout="hide(this.id)";
+>Waldo!</p>
+
+<p id="w3"
+onmouseover="show(this.id,'#0000cc')";
+onmouseout="hide(this.id)";
+>Waldo!</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
