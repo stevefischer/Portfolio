@@ -34,7 +34,7 @@ ul{
 }
 li {
  display: inline-block;
- margin: 0 10%;
+ margin: 0 7%;
     
 }
 
@@ -68,7 +68,7 @@ li a:hover, a:hover {
   text-align: center;
   color:grey;
   text-decoration: none;
-  margin: 7.4% 9%;
+  margin: 7.4% 9.9%;
   font-family: Segoe UI;
 }
 
